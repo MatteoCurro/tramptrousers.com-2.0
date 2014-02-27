@@ -1,7 +1,9 @@
-var delta;
+(function($){
+var delta = 0;
     dragThreshold = 0.15;// "percentage" to drag before engaging
     dragStart = null;	 // used to determine touch / drag distance
     percentage = 0,
+    slides = $('.slide'),
     target,
     previousTarget;
 
@@ -75,8 +77,10 @@ function touchEnd () {
 
 }
 
-$(‘#projects’).on({
+$('.slide').on({
 	'touchstart': touchStart,
 	'touchmove': touchMove,
 	'touchend': touchEnd
 });
+
+})(jQuery);
