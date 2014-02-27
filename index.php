@@ -24,7 +24,9 @@
 
 	<div id="slides">
 		<section class="slide active">
-			<h1>Tramp Trousers</h1>
+			<div class="excerpt">
+				<h1>Tramp Trousers</h1>
+			</div>
 		</section><!-- fine slide -->
 
 		<section class="slide dark active">
