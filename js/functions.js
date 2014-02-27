@@ -23,7 +23,7 @@
 		ready = false;
 		// rimuove la classe active dove non necessaria (nascondendo quelle già visitate viene visualizzata quella corrente)
 		slides.each(function(i, slide) {
-			$(slide).toggleClass('active', (i >= currentSlideIndex));
+			$(slide).toggleClass('active', (i >= currentSlideIndex)).removeClass('content_visible');
 		});
 
 		activeNav();
@@ -63,8 +63,6 @@
 	function hideH1() {
 		// archivio la slide corrente
 		var current_slide_title = slides.eq(currentSlideIndex).find('h1');
-		console.log('loggato_h1');
-		console.log(slides.eq(currentSlideIndex).find('h1'));
 
 		current_slide_title.removeClass('hidden');
 		current_slide_title.parent().prevAll().find('h1').addClass('hidden');
@@ -151,7 +149,7 @@
 		activeNav();
 
 		// archivio la slide corrente
-		var currentSlide = slides.eq(currentSlideIndex);
+		var currentSlide = slides.removeClass('content_visible').eq(currentSlideIndex);
 
 		currentSlide.addClass('active');
 		currentSlide.prevAll().removeClass('active');
@@ -161,6 +159,18 @@
 
 
 
-	
 
+
+
+	//////////////////////////////////////////////
+	//////////////////////////////////////////////
+	// GESTIONE CONTENUTO SLIDES
+	//////////////////////////////////////////////
+	//////////////////////////////////////////////
+	$('.expand').on('click', function() {
+		$(this).parent().parent().addClass('content_visible');
+	});
+	$('.close').on('click', function() {
+		$(this).parent().parent().removeClass('content_visible');
+	});
 })(jQuery);
