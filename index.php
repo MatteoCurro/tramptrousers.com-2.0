@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="no-js">
 <head>
 	<title>Tramp Trousers</title>
 	<meta charset="utf-8">
@@ -35,7 +35,7 @@
 
 			<div class="content">
 			<span class="close">CLOSE</span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p></div>
+			<p>Sezione contenente testo o altro. </p></div>
 		</section><!-- fine slide -->
 
 		<section class="slide active">
@@ -46,14 +46,14 @@
 
 			<div class="content dark">
 			<span class="close">CLOSE</span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p></div>
+			<p>Qui ci sar&agrave; ad esempio la galleri con le foto della collezione. </p></div>
 		</section><!-- fine slide -->
 	</div><!-- fine slides container -->
 
 	<nav>
-		<span class="active"></span>
-		<span></span>
-		<span></span>
+		<span class="active" data-section-title="Tramp Trousers"></span>
+		<span data-section-title="Anything but classic"></span>
+		<span data-section-title="Collection"></span>
 	</nav>
 
 </div> <!-- fine wrapper -->

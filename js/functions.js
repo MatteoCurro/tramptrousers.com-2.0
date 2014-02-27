@@ -1,4 +1,6 @@
 (function($){
+
+	$('html').removeClass('no-js');
 	// Variabili
 	var delta = 0,
 		currentSlideIndex = 0,
@@ -156,6 +158,7 @@
 		currentSlide.nextAll().addClass('active');
 		hideH1();
 	});
+
 
 
 
