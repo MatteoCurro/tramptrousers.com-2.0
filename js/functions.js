@@ -67,8 +67,8 @@
 		var current_slide_title = slides.eq(currentSlideIndex).find('h1');
 
 		current_slide_title.removeClass('hidden');
-		current_slide_title.parent().prevAll().find('h1').addClass('hidden');
-		current_slide_title.parent().nextAll().find('h1').removeClass('hidden');
+		current_slide_title.parents('.slide').prevAll().find('h1').addClass('hidden');
+		current_slide_title.parents('.slide').nextAll().find('h1').removeClass('hidden');
 	}
 
 
